@@ -2,14 +2,20 @@ import {Component } from '@angular/core';
 
 @Component({
   selector: 'pm-root',
- // templateUrl: './app.component.html',
+  //templateUrl: './app.component.html',
  template: `
- <div><h1>{{title}}</h1></div>
- <div>My first compoment</div>
+ <div><h1>{{pageTitle }}</h1>
+ <pm-products>  </pm-products>
+ </div>
  ` ,
 })
 
 // styleUrls: ['./app.component.css']
 export class AppComponent {
-  title = 'Product Management';
+  pageTitle = 'Product Management';
+
+  getMsg():String{
+
+    return "sfsdf";
+  }
 }
